@@ -6,136 +6,136 @@
     <title>Néstor López Royo - Solution Architect</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilos Globales */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f1f1f1;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
+    /* Estilos Globales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
 
-        .container {
-            width: 80%;
-            max-width: 900px;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-        .container:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-        }
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
 
-        h1, h2 {
-            color: #2d3e50;
-            margin-bottom: 10px;
-        }
+h1, h2 {
+    color: #2d3e50;
+    margin-bottom: 10px;
+}
 
-        h2 {
-            margin-top: 20px;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 5px;
-        }
+h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
 
-        p, ul {
-            line-height: 1.6;
-            font-size: 1rem;
-        }
+p, ul {
+    line-height: 1.6;
+    font-size: 1rem;
+}
 
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
+a {
+    color: #007bff;
+    text-decoration: none;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
-        .section {
-            margin-bottom: 30px;
-        }
+.section {
+    margin-bottom: 30px;
+}
 
-        /* Estilo para las listas */
-        ul {
-            padding-left: 20px;
-        }
+/* Estilo para las listas */
+ul {
+    padding-left: 20px;
+}
 
-        ul li {
-            list-style-type: disc;
-            margin-bottom: 10px;
-        }
+ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+}
 
-        ul.skills-list li,
-        ul.experience-list li {
-            font-size: 1.1rem;
-            color: #555;
-        }
+ul.skills-list li,
+ul.experience-list li {
+    font-size: 1.1rem;
+    color: #555;
+}
 
-        /* Estilos para el encabezado */
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+/* Estilos para el encabezado */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-        header h1 {
-            font-size: 2.5rem;
-            color: #007bff;
-            margin: 0;
-        }
+header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin: 0;
+}
 
-        header p {
-            font-size: 1.1rem;
-            color: #555;
-        }
+header p {
+    font-size: 1.1rem;
+    color: #555;
+}
 
-        header .email {
-            font-weight: bold;
-        }
+header .email {
+    font-weight: bold;
+}
 
-        /* Estilos para las secciones */
-        .skills-list li,
-        .experience-list li {
-            color: #333;
-        }
+/* Estilos para las secciones */
+.skills-list li,
+.experience-list li {
+    color: #333;
+}
 
-        .skills-list li:before,
-        .experience-list li:before {
-            content: "• ";
-            color: #007bff;
-        }
+.skills-list li:before,
+.experience-list li:before {
+    content: "• ";
+    color: #007bff;
+}
 
-        .footer {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-            margin-top: 40px;
-        }
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 40px;
+}
 
-        /* Estilo para los botones de contacto */
-        .btn-contact {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
+/* Estilo para los botones de contacto */
+.btn-contact {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
 
-        .btn-contact:hover {
-            background-color: #0056b3;
-        }
+.btn-contact:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 <body>
