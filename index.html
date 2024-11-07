@@ -3,51 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Néstor López Royo - Back-End Software Developer</title>
+    <title>Néstor López Royo - Solution Architect</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Estilos Globales */
         body {
             font-family: 'Roboto', sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
+
         .container {
             width: 80%;
             max-width: 900px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 20px;
+            background-color: #fff;
+            padding: 40px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
+
+        .container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
         h1, h2 {
-            color: #333;
-        }
-        h2 {
-            margin-top: 20px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .skills-list, .experience-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li, .experience-list li {
+            color: #2d3e50;
             margin-bottom: 10px;
         }
-        .skills-list li:before, .experience-list li:before {
-            content: "• ";
-            color: #007BFF;
+
+        h2 {
+            margin-top: 20px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
         }
-        footer {
+
+        p, ul {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Estilo para las listas */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            list-style-type: disc;
+            margin-bottom: 10px;
+        }
+
+        ul.skills-list li,
+        ul.experience-list li {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Estilos para el encabezado */
+        header {
             text-align: center;
-            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #007bff;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        header .email {
+            font-weight: bold;
+        }
+
+        /* Estilos para las secciones */
+        .skills-list li,
+        .experience-list li {
+            color: #333;
+        }
+
+        .skills-list li:before,
+        .experience-list li:before {
+            content: "• ";
+            color: #007bff;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
             color: #777;
+            margin-top: 40px;
+        }
+
+        /* Estilo para los botones de contacto */
+        .btn-contact {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -56,37 +143,49 @@
     <div class="container">
         <header>
             <h1>Néstor López Royo</h1>
-            <p><strong>Back-End Software Developer</strong></p>
+            <p><strong>Solution Architect | Back-End Software Developer</strong></p>
             <p>Barcelona, España</p>
-            <p><strong>Correo electrónico:</strong> <a href="mailto:nestorlopezroyo@gmail.com">nestorlopezroyo@gmail.com</a></p>
+            <p class="email">Correo electrónico: <a href="mailto:nestorlopezroyo@gmail.com">nestorlopezroyo@gmail.com</a></p>
         </header>
 
         <section class="section">
             <h2>Extracto Profesional</h2>
-            <p>Profesional con más de 20 años de experiencia en diseño, desarrollo y mantenimiento de aplicaciones. Actualmente en BBVA Technology, enfocado en proyectos globales utilizando microservicios y gRPC. Experto en COBOL, IMS, JCL y DB2, con habilidades en automatización y CI/CD. Formador y facilitador de equipos ágiles.</p>
+            <p>Profesional con más de 20 años de experiencia en el diseño, desarrollo y gestión de soluciones tecnológicas a gran escala. Mi carrera se ha centrado en el diseño arquitectónico de sistemas, implementación de microservicios, y la gestión de proyectos globales con tecnologías como Java, Spring Boot, gRPC, y bases de datos distribuidas. Experto en la creación de soluciones escalables, optimización de procesos y en la dirección de equipos ágiles. Mi enfoque es siempre generar valor tangible y alineado con las necesidades del negocio.</p>
         </section>
 
         <section class="section">
             <h2>Habilidades Técnicas (Hard Skills)</h2>
             <ul class="skills-list">
+                <li><strong>Diseño de Arquitecturas:</strong> Microservicios, gRPC, diseño de APIs, soluciones escalables.</li>
                 <li><strong>Lenguajes de Programación:</strong> Java, Spring Boot, Spark, JavaScript, Google Script, COBOL</li>
                 <li><strong>Bases de Datos:</strong> DB2, SQL, ElasticSearch</li>
-                <li><strong>Arquitectura y Diseño:</strong> Microservicios, gRPC, Diseño de APIs</li>
-                <li><strong>Metodologías:</strong> TDD (Test-Driven Development), BDD (Behavior-Driven Development), Agile</li>
-                <li><strong>Herramientas y Tecnologías:</strong> Git, Bash</li>
-                <li><strong>Automatización y CI/CD:</strong> Integración continua y entrega continua en entornos complejos</li>
+                <li><strong>Metodologías y Prácticas:</strong> Agile, Scrum, TDD (Test-Driven Development), BDD (Behavior-Driven Development), CI/CD</li>
+                <li><strong>Integración y Automatización:</strong> Diseño e implementación de soluciones de integración, automatización de procesos, orquestación de servicios.</li>
+                <li><strong>Herramientas:</strong> Git, Bash, Jenkins, Docker</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>Habilidades Blandas (Soft Skills)</h2>
+
+            <h3>Comunicación y Trabajo en Equipo</h3>
             <ul class="skills-list">
-                <li><strong>Enfoque a Resultados:</strong> Capacidad para identificar y cumplir objetivos, garantizando entregas eficientes y de calidad.</li>
-                <li><strong>Enfoque a Aportar Valor:</strong> Compromiso con la creación de soluciones que generen valor tangible para el negocio y los usuarios finales.</li>
-                <li><strong>Asertividad:</strong> Comunicación clara y efectiva para gestionar expectativas y resolver problemas dentro de equipos multifuncionales.</li>
-                <li><strong>Manejo de la Incertidumbre:</strong> Habilidad para adaptarse a cambios rápidos y situaciones imprevisibles sin perder el enfoque en los objetivos a largo plazo.</li>
-                <li><strong>Trabajo en Equipos Ágiles:</strong> Facilitación de equipos ágiles, asegurando la colaboración y el cumplimiento de objetivos dentro de plazos establecidos.</li>
-                <li><strong>Gestión de Solución de Desarrollo:</strong> Capacidad para gestionar y coordinar soluciones desde el diseño de la API hasta el backend, garantizando la integridad y eficiencia de las arquitecturas implementadas.</li>
+                <li><strong>Asertividad y Escucha Activa:</strong> Capacidad para expresar ideas técnicas de forma clara a stakeholders, equipos técnicos y no técnicos, gestionando expectativas.</li>
+                <li><strong>Facilitador de Equipos Ágiles:</strong> Experiencia liderando equipos ágiles, promoviendo la colaboración, la mejora continua y la transparencia en el desarrollo de soluciones.</li>
+                <li><strong>Comunicación Eficaz:</strong> Comunicación clara y efectiva, asegurando la alineación de los objetivos del proyecto entre todos los involucrados.</li>
+            </ul>
+
+            <h3>Liderazgo y Gestión de Proyectos</h3>
+            <ul class="skills-list">
+                <li><strong>Liderazgo de Equipos de Desarrollo:</strong> Habilidad para guiar equipos multidisciplinarios en el diseño e implementación de soluciones arquitectónicas complejas, motivando y optimizando el rendimiento del equipo.</li>
+                <li><strong>Gestión de Proyectos Complejos:</strong> Gestión de soluciones desde el diseño de la arquitectura hasta la implementación y escalabilidad, con enfoque en la entrega continua de valor a los usuarios finales.</li>
+                <li><strong>Gestión de la Incertidumbre:</strong> Capacidad para tomar decisiones informadas en entornos inciertos, priorizando de acuerdo con las necesidades del negocio y los recursos disponibles.</li>
+            </ul>
+
+            <h3>Orientación a Resultados y Valor</h3>
+            <ul class="skills-list">
+                <li><strong>Enfoque a Resultados:</strong> Compromiso con la entrega de soluciones arquitectónicas que optimicen los procesos y alineen las necesidades tecnológicas con los objetivos estratégicos del negocio.</li>
+                <li><strong>Enfoque en Aportar Valor:</strong> Siempre enfocado en generar valor a través de la arquitectura de soluciones, mejorando la eficiencia, reduciendo costes operativos y ofreciendo experiencias de usuario excepcionales.</li>
             </ul>
         </section>
 
@@ -95,34 +194,35 @@
             <ul class="experience-list">
                 <li><strong>BBVA Technology</strong> (2019 - 2024) - <em>Desarrollador Backend Senior</em>
                     <ul>
-                        <li>Implementación de microservicios y gestión de proyectos multi-local.</li>
-                        <li>Diseño de APIs en Java-Spring y mantenimiento en entornos mainframe.</li>
+                        <li>Diseño e implementación de arquitecturas basadas en microservicios utilizando Java y Spring Boot.</li>
+                        <li>Gestión de proyectos de integración en entornos globales, liderando equipos ágiles en el diseño de soluciones escalables y seguras.</li>
+                        <li>Optimización y mantenimiento de soluciones en mainframe, asegurando la integración fluida con sistemas modernos.</li>
                     </ul>
                 </li>
 
                 <li><strong>Informació i Tecnologia de Catalunya</strong> (2011 - 2019) - <em>Analista Orgánico Fondos de Inversión</em>
                     <ul>
-                        <li>Migración de sistemas de Catalunya Caixa a BBVA.</li>
-                        <li>Documentación técnica y liderazgo de equipos.</li>
+                        <li>Responsable de la migración de sistemas de Catalunya Caixa a BBVA, con foco en la arquitectura de integración.</li>
+                        <li>Diseño y documentación técnica de soluciones para fondos de inversión, implementando APIs y bases de datos distribuidas.</li>
                     </ul>
                 </li>
 
                 <li><strong>Informació i Tecnologia de Catalunya</strong> (2005 - 2011) - <em>Analista-Programador</em>
                     <ul>
-                        <li>Desarrollo de aplicaciones para fondos de inversión y planes de pensiones.</li>
-                        <li>Especialización en COBOL/CICS/DB2 en entornos host.</li>
+                        <li>Desarrollo de soluciones para fondos de inversión y planes de pensiones, con especialización en COBOL/CICS/DB2 en entornos host.</li>
+                        <li>Participación en el diseño e implementación de soluciones de backend y optimización de procesos.</li>
                     </ul>
                 </li>
 
                 <li><strong>GESEM & everis</strong> (2001 - 2005) - <em>Desarrollador de Soluciones para Banca y Seguros</em>
                     <ul>
-                        <li>Desarrollo de soluciones para banca y seguros con COBOL.</li>
+                        <li>Desarrollo de soluciones para la industria bancaria y aseguradora, trabajando en la integración de sistemas core bancarios con nuevas aplicaciones.</li>
                     </ul>
                 </li>
 
                 <li><strong>INET</strong> (1999 - 2001) - <em>Mantenimiento Técnico de Sistemas Municipales</em>
                     <ul>
-                        <li>Mantenimiento de sistemas para la administración local.</li>
+                        <li>Mantenimiento y mejora de sistemas informáticos utilizados por las administraciones locales.</li>
                     </ul>
                 </li>
             </ul>
@@ -136,8 +236,9 @@
             </ul>
         </section>
 
-        <footer>
+        <footer class="footer">
             <p>&copy; 2024 Néstor López Royo - Todos los derechos reservados</p>
+            <a href="mailto:nestorlopezroyo@gmail.com" class="btn-contact">Contactar</a>
         </footer>
     </div>
 
