@@ -1,6 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <title>Timeline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Néstor López Royo - Back-End Software Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .skills-list, .experience-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li, .experience-list li {
+            margin-bottom: 10px;
+        }
+        .skills-list li:before, .experience-list li:before {
+            content: "• ";
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-  
+
+    <div class="container">
+        <header>
+            <h1>Néstor López Royo</h1>
+            <p><strong>Back-End Software Developer</strong></p>
+            <p>Barcelona, España</p>
+        </header>
+
+        <section class="section">
+            <h2>Extracto Profesional</h2>
+            <p>Profesional con más de 20 años de experiencia en diseño, desarrollo y mantenimiento de aplicaciones. Actualmente en BBVA Technology, enfocado en proyectos globales utilizando microservicios y gRPC. Experto en COBOL, IMS, JCL y DB2, con habilidades en automatización y CI/CD. Formador y facilitador de equipos ágiles.</p>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades Técnicas (Hard Skills)</h2>
+            <ul class="skills-list">
+                <li><strong>Lenguajes de Programación:</strong> Java, Spring Boot, Spark, JavaScript, Google Script, COBOL</li>
+                <li><strong>Bases de Datos:</strong> DB2, SQL, ElasticSearch</li>
+                <li><strong>Arquitectura y Diseño:</strong> Microservicios, gRPC, Diseño de APIs</li>
+                <li><strong>Metodologías:</strong> TDD (Test-Driven Development), BDD (Behavior-Driven Development), Agile</li>
+                <li><strong>Herramientas y Tecnologías:</strong> Git, Bash</li>
+                <li><strong>Automatización y CI/CD:</strong> Integración continua y entrega continua en entornos complejos</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Habilidades Blandas (Soft Skills)</h2>
+            <ul class="skills-list">
+                <li><strong>Enfoque a Resultados:</strong> Capacidad para identificar y cumplir objetivos, garantizando entregas eficientes y de calidad.</li>
+                <li><strong>Enfoque a Aportar Valor:</strong> Compromiso con la creación de soluciones que generen valor tangible para el negocio y los usuarios finales.</li>
+                <li><strong>Asertividad:</strong> Comunicación clara y efectiva para gestionar expectativas y resolver problemas dentro de equipos multifuncionales.</li>
+                <li><strong>Manejo de la Incertidumbre:</strong> Habilidad para adaptarse a cambios rápidos y situaciones imprevisibles sin perder el enfoque en los objetivos a largo plazo.</li>
+                <li><strong>Trabajo en Equipos Ágiles:</strong> Facilitación de equipos ágiles, asegurando la colaboración y el cumplimiento de objetivos dentro de plazos establecidos.</li>
+                <li><strong>Gestión de Solución de Desarrollo:</strong> Capacidad para gestionar y coordinar soluciones desde el diseño de la API hasta el backend, garantizando la integridad y eficiencia de las arquitecturas implementadas.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Experiencia Profesional</h2>
+            <ul class="experience-list">
+                <li><strong>BBVA Technology</strong> (2019 - 2024) - <em>Desarrollador Backend Senior</em>
+                    <ul>
+                        <li>Implementación de microservicios y gestión de proyectos multi-local.</li>
+                        <li>Diseño de APIs en Java-Spring y mantenimiento en entornos mainframe.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Informació i Tecnologia de Catalunya</strong> (2011 - 2019) - <em>Analista Orgánico Fondos de Inversión</em>
+                    <ul>
+                        <li>Migración de sistemas de Catalunya Caixa a BBVA.</li>
+                        <li>Documentación técnica y liderazgo de equipos.</li>
+                    </ul>
+                </li>
+
+                <li><strong>Informació i Tecnologia de Catalunya</strong> (2005 - 2011) - <em>Analista-Programador</em>
+                    <ul>
+                        <li>Desarrollo de aplicaciones para fondos de inversión y planes de pensiones.</li>
+                        <li>Especialización en COBOL/CICS/DB2 en entornos host.</li>
+                    </ul>
+                </li>
+
+                <li><strong>GESEM & everis</strong> (2001 - 2005) - <em>Desarrollador de Soluciones para Banca y Seguros</em>
+                    <ul>
+                        <li>Desarrollo de soluciones para banca y seguros con COBOL.</li>
+                    </ul>
+                </li>
+
+                <li><strong>INET</strong> (1999 - 2001) - <em>Mantenimiento Técnico de Sistemas Municipales</em>
+                    <ul>
+                        <li>Mantenimiento de sistemas para la administración local.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Educación</h2>
+            <ul class="experience-list">
+                <li><strong>Santa Pau Pifma</strong> - FPII en Informática de Gestión (1994 - 1999)</li>
+                <li><strong>Ciclo Formativo de Grado Superior en Telecomunicaciones</strong> (1999 - 2001)</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Néstor López Royo - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
 </body>
+</html>
