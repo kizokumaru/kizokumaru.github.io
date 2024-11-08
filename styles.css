@@ -63,28 +63,6 @@ ul li {
     margin-bottom: 20px;
 }
 
-/* Estilo para el botón de LinkedIn */
-.linkedin-button {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    background-color: #333;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.linkedin-button:hover {
-    background-color: #ffffff;
-}
-
-.linkedin-icon {
-    margin-right: 10px;
-}
-
-
 .footer {
     text-align: center;
     font-size: 0.9rem;
@@ -92,20 +70,35 @@ ul li {
     margin-top: 40px;
 }
 
-/* Estilo para los botones de contacto */
-.btn-contact {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    padding: 10px;
 }
 
-.btn-contact:hover {
-    background-color: #0056b3;
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los botones a la derecha */
+    gap: 10px; /* Espacio entre botones */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px; /* Tamaño del ícono */
+    color: #ffffff; /* Color del ícono, ajusta según desees */
+}
+
+a.icon-link {
+    color: #4CAF50;
+    text-decoration: none;
 }
