@@ -3,245 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Néstor López Royo - Solution Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Estilos Globales */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f1f1f1;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    padding-top: 20px;  /* Agregado para evitar que el texto se pegue al borde superior */
-}
-
-.container {
-    width: 80%;
-    max-width: 900px;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.container:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-h1, h2 {
-    color: #2d3e50;
-    margin-bottom: 10px;
-}
-
-h2 {
-    margin-top: 20px;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-}
-
-p, ul {
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.section {
-    margin-bottom: 30px;
-}
-
-/* Estilo para las listas */
-ul {
-    padding-left: 20px;
-}
-
-ul li {
-    list-style-type: disc;
-    margin-bottom: 10px;
-}
-
-ul.skills-list li,
-ul.experience-list li {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Estilos para el encabezado */
-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    color: #007bff;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-header .email {
-    font-weight: bold;
-}
-
-/* Estilos para las secciones */
-.skills-list li,
-.experience-list li {
-    color: #333;
-}
-
-.skills-list li:before,
-.experience-list li:before {
-    content: "• ";
-    color: #007bff;
-}
-
-.footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #777;
-    margin-top: 40px;
-}
-
-/* Estilo para los botones de contacto */
-.btn-contact {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-contact:hover {
-    background-color: #0056b3;
-}
-    </style>
+    <meta name="author" content="Néstor López Royo">
+    <title>Néstor López Royo - Back-End Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Néstor López Royo</h1>
+        <p>Back-End Software Developer</p>
+        <p><a href="mailto:nestorlopezroyo@gmail.com">nestorlopezroyo@gmail.com</a></p>
+        <!-- Enlace de LinkedIn como botón -->
+        <a href="https://www.linkedin.com/in/nestorlopezroyo" target="_blank" class="linkedin-button">Ver mi perfil en LinkedIn</a>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Néstor López Royo</h1>
-            <p><strong>Solution Architect | Back-End Software Developer</strong></p>
-            <p>Barcelona, España</p>
-            <p class="email">Correo electrónico: <a href="mailto:nestorlopezroyo@gmail.com">nestorlopezroyo@gmail.com</a></p>
-        </header>
+    <section id="resumen">
+        <h2>Resumen Profesional</h2>
+        <p>Soy un profesional de TI con más de 20 años de experiencia en el diseño, desarrollo y liderazgo de soluciones tecnológicas a gran escala. A lo largo de mi carrera, he trabajado en el diseño e implementación de sistemas complejos; he participado en proyectos globales y formado parte de equipos ágiles, asegurando la entrega de soluciones escalables y eficientes que optimizan procesos y generan valor para el negocio. Mi sólida experiencia técnica, junto con un enfoque orientado a alinear las soluciones con los objetivos estratégicos de la empresa, me posicionan como un candidato ideal para roles de arquitectura de soluciones.</p>
+    </section>
 
-        <section class="section">
-            <h2>Extracto Profesional</h2>
-            <p>Profesional con más de 20 años de experiencia en el diseño, desarrollo y gestión de soluciones tecnológicas a gran escala. Mi carrera se ha centrado en el diseño arquitectónico de sistemas, implementación de microservicios, y la gestión de proyectos globales con tecnologías como Java, Spring Boot, gRPC, y bases de datos distribuidas. Experto en la creación de soluciones escalables, optimización de procesos y en la dirección de equipos ágiles. Mi enfoque es siempre generar valor tangible y alineado con las necesidades del negocio.</p>
-        </section>
+    <section id="experiencia">
+        <h2>Experiencia Laboral Relevante</h2>
 
-        <section class="section">
-            <h2>Habilidades Técnicas (Hard Skills)</h2>
-            <ul class="skills-list">
-                <li><strong>Diseño de Arquitecturas:</strong> Microservicios, gRPC, diseño de APIs, soluciones escalables.</li>
-                <li><strong>Lenguajes de Programación:</strong> Java, Spring Boot, Spark, JavaScript, Google Script, COBOL</li>
-                <li><strong>Bases de Datos:</strong> DB2, SQL, ElasticSearch</li>
-                <li><strong>Metodologías y Prácticas:</strong> Agile, Scrum, TDD (Test-Driven Development), BDD (Behavior-Driven Development), CI/CD</li>
-                <li><strong>Integración y Automatización:</strong> Diseño e implementación de soluciones de integración, automatización de procesos, orquestación de servicios.</li>
-                <li><strong>Herramientas:</strong> Git, Bash, Jenkins, Docker</li>
+        <div class="experiencia-item">
+            <h3>Proyecto Global de Renovación del Core Bancario – BBVA</h3>
+            <p><strong>Rol y Responsabilidades:</strong> Participé activamente en la modernización del core bancario, liderando la actualización de sistemas legacy hacia soluciones modernas basadas en la nube, mediante arquitecturas de microservicios.</p>
+            <p><strong>Logros Clave:</strong></p>
+            <ul>
+                <li>Desarrollé y gestioné la apificación de procesos críticos en distintas áreas del core bancario, mejorando la integración y el acceso a servicios.</li>
+                <li>Implementé estrategias de migración a microservicios, lo que resultó en una mayor escalabilidad y flexibilidad del sistema.</li>
+                <li>Contribuí al diseño de soluciones resilientes y seguras, alineadas con las mejores prácticas de la industria, garantizando la estabilidad y el rendimiento del sistema.</li>
             </ul>
-        </section>
+            <p><strong>Tecnologías Utilizadas:</strong> Java, Spring Boot, gRPC, plataformas de nube (AWS), Apache Spark, Cobol, JCL y DB2.</p>
+        </div>
 
-        <section class="section">
-            <h2>Habilidades Blandas (Soft Skills)</h2>
+    </section>
 
-            <h3>Comunicación y Trabajo en Equipo</h3>
-            <ul class="skills-list">
-                <li><strong>Asertividad y Escucha Activa:</strong> Capacidad para expresar ideas técnicas de forma clara a stakeholders, equipos técnicos y no técnicos, gestionando expectativas.</li>
-                <li><strong>Facilitador de Equipos Ágiles:</strong> Experiencia liderando equipos ágiles, promoviendo la colaboración, la mejora continua y la transparencia en el desarrollo de soluciones.</li>
-                <li><strong>Comunicación Eficaz:</strong> Comunicación clara y efectiva, asegurando la alineación de los objetivos del proyecto entre todos los involucrados.</li>
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li><strong>Diseño de Arquitecturas:</strong> Microservicios, gRPC, diseño de APIs y soluciones escalables.</li>
+            <li><strong>Lenguajes de Programación:</strong> Java, Spring Boot, Spark, JavaScript, Google Script, COBOL y JCL.</li>
+            <li><strong>Bases de Datos:</strong> DB2, SQL y ElasticSearch.</li>
+            <li><strong>Metodologías y Prácticas:</strong> Agile, Scrum, TDD (Test-Driven Development), BDD (Behavior-Driven Development) y CI/CD.</li>
+            <li><strong>Integración y Automatización:</strong> Diseño e implementación de soluciones de integración, automatización de procesos y orquestación de servicios.</li>
+            <li><strong>Herramientas:</strong> Git, Bash, Jenkins y SonarQube.</li>
+        </ul>
+    </section>
+
+    <section id="habilidades-blandas">
+        <h2>Habilidades Blandas</h2>
+        <ul>
+            <li><strong>Comunicación Asertiva:</strong> Capacidad para transmitir ideas de manera clara y efectiva, facilitando la colaboración y comprensión entre equipos.</li>
+            <li><strong>Trabajo en Equipo y Colaboración:</strong> Fuerte enfoque en trabajar en equipo y fomentar la cooperación entre diferentes grupos para lograr objetivos comunes.</li>
+            <li><strong>Intermediación y Coordinación:</strong> Experiencia como enlace entre áreas de negocio y tecnologías legacy y nuevas tecnologías, asegurando una transición fluida y comprensión mutua.</li>
+            <li><strong>Resolución de Problemas y Enfoque en Aportar Valor:</strong> Proactivo en la identificación de soluciones que optimizan procesos y contribuyen al valor del negocio.</li>
+            <li><strong>Curiosidad y Actualización Constante:</strong> Disposición para mantenerse al tanto de las novedades tecnológicas, explorando nuevas herramientas y tendencias que puedan aportar mejoras.</li>
+            <li><strong>Liderazgo en Metodologías Ágiles:</strong> Experiencia en la realización de tareas como ScrumMaster y KanbanMaster, guiando equipos en prácticas ágiles para maximizar la eficiencia y el desempeño.</li>
+        </ul>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Adicionales</h2>
+        <ul>
+            <li><strong>Participación en Hackathon sobre SSDLC (Secure Software Development Life Cycle):</strong> Participé en un hackathon enfocado en el ciclo de vida de desarrollo de software seguro (SSDLC), donde trabajé en la implementación de prácticas y herramientas de seguridad para aplicaciones.</li>
+            <li><strong>Participación en Proyectos Internos de Ideación:</strong> Formé parte de equipos multidisciplinarios dedicados a la ideación y desarrollo de soluciones innovadoras dentro de la empresa.</li>
+        </ul>
+    </section>
+
+    <section id="experiencia-laboral">
+        <h2>Experiencia Laboral</h2>
+
+        <div class="experiencia-item">
+            <h3>BBVA Technology (2019 - 2024) - Backend Senior Developer (Core Banking)</h3>
+            <ul>
+                <li>Diseño e implementación de arquitecturas basadas en microservicios utilizando Java y Spring Boot, optimizando la escalabilidad y seguridad de sistemas globales.</li>
+                <li>Liderazgo en la gestión de proyectos de integración en entornos globales; dirigí equipos ágiles para crear soluciones robustas, alineadas con los objetivos estratégicos del negocio.</li>
+                <li>Optimización y mantenimiento de soluciones en mainframe, asegurando la integración fluida con sistemas modernos y contribuyendo a la transición tecnológica sin interrumpir operaciones clave.</li>
+                <li>Formador en nuevas tecnologías y fundamentos en Agile.</li>
             </ul>
+        </div>
 
-            <h3>Liderazgo y Gestión de Proyectos</h3>
-            <ul class="skills-list">
-                <li><strong>Liderazgo de Equipos de Desarrollo:</strong> Habilidad para guiar equipos multidisciplinarios en el diseño e implementación de soluciones arquitectónicas complejas, motivando y optimizando el rendimiento del equipo.</li>
-                <li><strong>Gestión de Proyectos Complejos:</strong> Gestión de soluciones desde el diseño de la arquitectura hasta la implementación y escalabilidad, con enfoque en la entrega continua de valor a los usuarios finales.</li>
-                <li><strong>Gestión de la Incertidumbre:</strong> Capacidad para tomar decisiones informadas en entornos inciertos, priorizando de acuerdo con las necesidades del negocio y los recursos disponibles.</li>
+        <div class="experiencia-item">
+            <h3>Informació i Tecnologia de Catalunya (2011 - 2019) - Analista Orgánico (Fondos de Inversión)</h3>
+            <ul>
+                <li>Responsable de la migración de sistemas de Catalunya Caixa a BBVA, diseñando arquitecturas de integración que facilitaron la transición sin perder funcionalidad.</li>
+                <li>Diseño y documentación técnica de soluciones innovadoras para fondos de inversión, implementando APIs y bases de datos distribuidas, mejorando la eficiencia operativa y reduciendo tiempos de respuesta.</li>
+                <li>Desarrollo de soluciones que optimizan la integración de sistemas legados con nuevas plataformas tecnológicas, alineando las necesidades del negocio con la infraestructura tecnológica.</li>
             </ul>
+        </div>
 
-            <h3>Orientación a Resultados y Valor</h3>
-            <ul class="skills-list">
-                <li><strong>Enfoque a Resultados:</strong> Compromiso con la entrega de soluciones arquitectónicas que optimicen los procesos y alineen las necesidades tecnológicas con los objetivos estratégicos del negocio.</li>
-                <li><strong>Enfoque en Aportar Valor:</strong> Siempre enfocado en generar valor a través de la arquitectura de soluciones, mejorando la eficiencia, reduciendo costes operativos y ofreciendo experiencias de usuario excepcionales.</li>
-            </ul>
-        </section>
+        <!-- Agregar más experiencia laboral según sea necesario -->
 
-        <section class="section">
-            <h2>Experiencia Profesional</h2>
-            <ul class="experience-list">
-                <li><strong>BBVA Technology</strong> (2019 - 2024) - <em>Desarrollador Backend Senior</em>
-                    <ul>
-                        <li>Diseño e implementación de arquitecturas basadas en microservicios utilizando Java y Spring Boot.</li>
-                        <li>Gestión de proyectos de integración en entornos globales, liderando equipos ágiles en el diseño de soluciones escalables y seguras.</li>
-                        <li>Optimización y mantenimiento de soluciones en mainframe, asegurando la integración fluida con sistemas modernos.</li>
-                    </ul>
-                </li>
-
-                <li><strong>Informació i Tecnologia de Catalunya</strong> (2011 - 2019) - <em>Analista Orgánico Fondos de Inversión</em>
-                    <ul>
-                        <li>Responsable de la migración de sistemas de Catalunya Caixa a BBVA, con foco en la arquitectura de integración.</li>
-                        <li>Diseño y documentación técnica de soluciones para fondos de inversión, implementando APIs y bases de datos distribuidas.</li>
-                    </ul>
-                </li>
-
-                <li><strong>Informació i Tecnologia de Catalunya</strong> (2005 - 2011) - <em>Analista-Programador</em>
-                    <ul>
-                        <li>Desarrollo de soluciones para fondos de inversión y planes de pensiones, con especialización en COBOL/CICS/DB2 en entornos host.</li>
-                        <li>Participación en el diseño e implementación de soluciones de backend y optimización de procesos.</li>
-                    </ul>
-                </li>
-
-                <li><strong>GESEM & everis</strong> (2001 - 2005) - <em>Desarrollador de Soluciones para Banca y Seguros</em>
-                    <ul>
-                        <li>Desarrollo de soluciones para la industria bancaria y aseguradora, trabajando en la integración de sistemas core bancarios con nuevas aplicaciones.</li>
-                    </ul>
-                </li>
-
-                <li><strong>INET</strong> (1999 - 2001) - <em>Mantenimiento Técnico de Sistemas Municipales</em>
-                    <ul>
-                        <li>Mantenimiento y mejora de sistemas informáticos utilizados por las administraciones locales.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section class="section">
-            <h2>Educación</h2>
-            <ul class="experience-list">
-                <li><strong>Santa Pau Pifma</strong> - FPII en Informática de Gestión (1994 - 1999)</li>
-                <li><strong>Ciclo Formativo de Grado Superior en Telecomunicaciones</strong> (1999 - 2001)</li>
-            </ul>
-        </section>
-
-        <footer class="footer">
-            <p>&copy; 2024 Néstor López Royo - Todos los derechos reservados</p>
-            <a href="mailto:nestorlopezroyo@gmail.com" class="btn-contact">Contactar</a>
-        </footer>
-    </div>
+    </section>
 
 </body>
 </html>
