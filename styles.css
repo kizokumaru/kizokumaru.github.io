@@ -65,20 +65,28 @@ ul li {
 
 /* Estilo para el botón de LinkedIn */
 .linkedin-button {
-    display: inline-block;
-    background-color: #0077b5;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #0077B5;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 5px;
-    text-transform: uppercase;
     font-weight: bold;
-    margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
 .linkedin-button:hover {
     background-color: #005582;
 }
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
 .footer {
     text-align: center;
     font-size: 0.9rem;
